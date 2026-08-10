@@ -7,3 +7,17 @@
     <input type="password" name="user[password]" id="password" />
     <input type="submit" value="Create"/>
 </form>
+
+<%= form_with model: @user do |f| %>
+
+  <%= f.text_field :name %>
+
+  <%= f.email_field :email %>
+
+<% end %>
+
+<%= form_with model: @user do |f| %>
+    <%= f.text_field :name %>    
+    <%= f.email_field :email%>
+    <input type="submit" value="Create"/>
+<% end %>
